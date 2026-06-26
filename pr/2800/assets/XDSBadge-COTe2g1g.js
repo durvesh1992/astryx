@@ -1,0 +1,13 @@
+import{ad as i,ai as x,ar as k,aZ as p}from"./iframe-yRFQ_7VC.js";const g={base:{k1xSpc:"xds3nfvp2",kGNEyG:"xds6s0dn4",kjj79g:"xdsl56j7k",kOIVth:"xdszye2dw",kZKoxP:"xds1grt7ep",k8WAf4:"xdst970qd",kg3NbH:"xdsf314gf",kaIpWk:"xdsjspbzw",kMv6JI:"xdsjb2p0i",kGuDYH:"xds141an7d",kLWn49:"xds1ltkj2j",k63SB2:"xds1e4wzip",khDVqt:"xdsuxw1ft",$$css:!0}},c={neutral:{kWkggS:"xds17x4s8c",kMwMTN:"xds1tgivj0",$$css:!0},info:{kWkggS:"xds1ewilqj",kMwMTN:"xds17wrial",$$css:!0},success:{kWkggS:"xdsdsz4j9",kMwMTN:"xdsri61p4",$$css:!0},warning:{kWkggS:"xds1q8g9m5",kMwMTN:"xdsrebv38",$$css:!0},error:{kWkggS:"xds1pjz0fi",kMwMTN:"xds1m024r3",$$css:!0},blue:{kWkggS:"xds1o0wnni",kMwMTN:"xds1vvqiwl",$$css:!0},cyan:{kWkggS:"xds1rgj867",kMwMTN:"xds1txnczv",$$css:!0},green:{kWkggS:"xds1sqjeoo",kMwMTN:"xdsltfdvo",$$css:!0},orange:{kWkggS:"xds1e9xt6e",kMwMTN:"xdsm47u9q",$$css:!0},pink:{kWkggS:"xdsnpoty2",kMwMTN:"xdsiuofww",$$css:!0},purple:{kWkggS:"xds16i6n6f",kMwMTN:"xds1m9wyeb",$$css:!0},red:{kWkggS:"xds1cibrc5",kMwMTN:"xds1joocv1",$$css:!0},teal:{kWkggS:"xds1jtji5o",kMwMTN:"xds9x0lbs",$$css:!0},yellow:{kWkggS:"xds1bo7t0x",kMwMTN:"xdsdhq94a",$$css:!0}};function s({variant:e="neutral",label:t,icon:a,xstyle:r,className:d,style:n,ref:o,...l}){return i.jsxs("span",{ref:o,...x(p("badge",{variant:e}),k(g.base,c[e],r),d,n),...l,children:[a,t]})}s.displayName="XDSBadge";s.__docgenInfo={description:`A badge component for displaying status indicators, counts, or labels.
+
+Styles use XDS theme tokens via StyleX.
+Wrap your app in <Theme> to apply a theme.
+
+@example
+\`\`\`
+<XDSBadge label="Active" />
+<XDSBadge variant="success" label="Active" />
+<XDSBadge variant="error" label="3" />
+<XDSBadge variant="purple" label="Engineering" />
+\`\`\``,methods:[],displayName:"XDSBadge",props:{xstyle:{required:!1,tsType:{name:"StyleXStyles"},description:"StyleX styles created via `stylex.create()`. Merged with the component's\nbase styles inside a single `stylex.props()` call for optimal deduplication.\n\n@example\n```\nconst overrides = stylex.create({ root: { marginBottom: 8 } });\n<Component xstyle={overrides.root} />\n```"},ref:{required:!1,tsType:{name:"ReactRef",raw:"React.Ref<HTMLSpanElement>",elements:[{name:"HTMLSpanElement"}]},description:"Ref forwarded to the root element"},variant:{required:!1,tsType:{name:"XDSBadgeVariantMap"},description:`The visual style variant of the badge.
+@default 'neutral'`,defaultValue:{value:"'neutral'",computed:!1}},label:{required:!0,tsType:{name:"ReactNode"},description:"The badge label text."},icon:{required:!1,tsType:{name:"ReactNode"},description:"Optional icon to display before the label."}},composes:["Omit"]};export{s as X};

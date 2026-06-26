@@ -1,0 +1,1 @@
+import{at as e}from"./iframe-yRFQ_7VC.js";const o={isMobile:!1,isMobileNavOpen:!1,toggleMobileNav:()=>{},openMobileNav:()=>{},closeMobileNav:()=>{},isMobileNavEnabled:!1,hasAutoToggle:!0},l=e.createContext(o);l.displayName="XDSAppShellMobileContext";function t(){return e.use(l)}export{l as X,t as u};

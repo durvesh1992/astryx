@@ -1,0 +1,20 @@
+import{at as v,ad as r,ar as i,ai as g,aZ as k}from"./iframe-yRFQ_7VC.js";import{c as b}from"./XDSLayoutContent-DBrMIkuH.js";import{c as D,a as S,b as L,e as X}from"./padding.stylex-BDg7w1Mn.js";const t={header:{kmuXW:"xds2lah0s",$$css:!0},inner:{kB7OPa:"xds9f619",ks0D6T:"xdsjl2t3p",kUOVxO:"xdsvueqy4",kZCmMZ:"xds139j0dd",kwRFfy:"xdspc6k2p",kLKAdn:"xds81pis9",kGO01o:"xdsg476vw","--container-padding-inline-start":"xdsdvaxxn","--container-padding-inline-end":"xdsqpvj4r","--container-padding-block-start":"xdszz8v79","--container-padding-block-end":"xdsi9ns85",$$css:!0},fullBleed:{kZCmMZ:"xds1c1uobl",kwRFfy:"xdsyri2b",kLKAdn:"xdsexx8yu",kGO01o:"xds18d9i69","--container-padding-inline-start":"xdsrhngw9","--container-padding-inline-end":"xdsjsfl84","--container-padding-block-start":"xds1047aw6","--container-padding-block-end":"xdsax9j7h",$$css:!0},divider:{kt9PQ7:"xdsso031l",kfdmCh:"xds1q0q8m5",kL6WhQ:"xdsw8gpjh",$$css:!0}},w={sizing:n=>[{kZKoxP:n!=null?"xds16ye13r":n,$$css:!0},{"--x-height":(a=>typeof a=="number"?a+"px":a??void 0)(n)}]};function d({children:n,hasDivider:a,height:l,label:o,padding:e,role:c,xstyle:p,className:u,style:m,ref:y,...x}){const f=v.use(b),s=a??f?.defaultHasDividers??!1,h=e===0;return r.jsx("div",{ref:y,role:c,"aria-label":o,"data-divider":s||void 0,...g(k("layout-header"),i(t.header,w.sizing(l??null),s&&t.divider,p),u,m),...x,children:r.jsx("div",{...i(t.inner,h&&t.fullBleed,e!=null&&X[e],e!=null&&L[e],e!=null&&S[e],e!=null&&D[e]),children:n})})}d.displayName="XDSLayoutHeader";d.__docgenInfo={description:`Top bar / header for XDSLayout. Use for page titles, app bars, or toolbars.
+Renders in the header slot with optional divider and padding control.
+
+Already provides its own padding — don't add padding to children.
+Use \`padding={0}\` if your content manages its own padding (e.g. XDSTopNav).
+
+@example
+\`\`\`
+<XDSLayoutContainer variant="card">
+  <XDSLayout
+    header={<XDSLayoutHeader hasDivider>Page Title</XDSLayoutHeader>}
+    content={<XDSLayoutContent>...</XDSLayoutContent>}
+  />
+</XDSLayoutContainer>
+\`\`\``,methods:[],displayName:"XDSLayoutHeader",props:{xstyle:{required:!1,tsType:{name:"StyleXStyles"},description:"StyleX styles created via `stylex.create()`. Merged with the component's\nbase styles inside a single `stylex.props()` call for optimal deduplication.\n\n@example\n```\nconst overrides = stylex.create({ root: { marginBottom: 8 } });\n<Component xstyle={overrides.root} />\n```"},ref:{required:!1,tsType:{name:"ReactRef",raw:"React.Ref<HTMLDivElement>",elements:[{name:"HTMLDivElement"}]},description:""},children:{required:!1,tsType:{name:"ReactNode"},description:"Content to render inside the header."},hasDivider:{required:!1,tsType:{name:"boolean"},description:"Adds a themed border at the bottom edge.\nWhen false, spacing collapse is applied automatically for seamless visual flow.\nWhen not set, falls back to the parent XDSLayout's `defaultHasDividers`, then `false`.\n@default false"},height:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:`Height of the header.
+Numbers are treated as pixels, strings are used as-is.`},padding:{required:!1,tsType:{name:"union",raw:"0 | 0.5 | 1 | 1.5 | 2 | 3 | 4 | 5 | 6 | 8 | 10",elements:[{name:"literal",value:"0"},{name:"literal",value:"0.5"},{name:"literal",value:"1"},{name:"literal",value:"1.5"},{name:"literal",value:"2"},{name:"literal",value:"3"},{name:"literal",value:"4"},{name:"literal",value:"5"},{name:"literal",value:"6"},{name:"literal",value:"8"},{name:"literal",value:"10"}]},description:`Internal padding of the header using the spacing scale.
+Accepts numeric spacing steps: 0, 0.5, 1, 1.5, 2, 3, 4, 5, 6, 8, 10.
+Overrides the default padding from the layout container.`},label:{required:!1,tsType:{name:"string"},description:`Accessible label for the landmark.
+Required when role is set and multiple landmarks of the same type exist.`},role:{required:!1,tsType:{name:"AriaRole"},description:`ARIA landmark role for accessibility.
+Use 'banner' only for site-wide headers (not in nested layouts).`}},composes:["Omit"]};export{d as X};

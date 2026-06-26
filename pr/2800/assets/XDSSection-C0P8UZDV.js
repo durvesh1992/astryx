@@ -1,0 +1,30 @@
+import{ar as x,ad as g,ai as $,aZ as D}from"./iframe-yRFQ_7VC.js";import{c as X}from"./container.stylex-BI6SFdSl.js";import{e as q,b as P,a as f,c as y,s as j,p as W,f as L}from"./padding.stylex-BDg7w1Mn.js";const C={section:{kWkggS:"xds10xzikg",$$css:!0},transparent:{kWkggS:"xdsjbqb8w",$$css:!0},muted:{kWkggS:"xdswmxj5m",$$css:!0}},k={outer:{keTefX:"xdsojxgvx",k71WvV:"xds1fcf3bl",keoZOQ:"xdskibk3",k1K539:"xdslayyun",$$css:!0},inner:{"--container-padding-inline-start":"xdsrhngw9","--container-padding-inline-end":"xdsjsfl84","--container-padding-block-start":"xds1047aw6","--container-padding-block-end":"xdsax9j7h",kZKoxP:"xds5yr21d",$$css:!0}},c={top:{kEafiO:"xds178xt8z",kPef9Z:"xds13fuv20",kLZC3w:"xds1pc3f07",$$css:!0},bottom:{kt9PQ7:"xdsso031l",kfdmCh:"xds1q0q8m5",kL6WhQ:"xdsw8gpjh",$$css:!0},start:{k2ei4v:"xdspilrb4",kZ1KPB:null,kWqL5O:null,kVhnKS:"xds1t7ytsu",k4WBpm:null,kSWEuD:null,kGJrpR:"xds1j92z86",kaZRDh:null,k26BEO:null,$$css:!0},end:{ke9TFa:"xds1lun4ml",kZ1KPB:null,kWqL5O:null,k8ry5P:"xds18b5jzi",k4WBpm:null,kSWEuD:null,kBCPoo:"xds1gejf6u",kaZRDh:null,k26BEO:null,$$css:!0}},N={sizing:(t,i,r,l)=>[{kzqmXN:t!=null?"xds5lhr3w":t,kZKoxP:i!=null?"xds16ye13r":i,ks0D6T:r!=null?"xdsf68679":r,kAzted:l!=null?"xds82snj4":l,$$css:!0},{"--x-width":(e=>typeof e=="number"?e+"px":e??void 0)(t),"--x-height":(e=>typeof e=="number"?e+"px":e??void 0)(i),"--x-maxWidth":(e=>typeof e=="number"?e+"px":e??void 0)(r),"--x-minHeight":(e=>typeof e=="number"?e+"px":e??void 0)(l)}]};function h({variant:t="section",width:i,height:r,maxWidth:l,minHeight:e,children:S,dividers:o,padding:p,paddingBlock:s,xstyle:b,className:v,style:m,ref:T,...w}){const a=p==null,n=p??4,d=L[n],u=x(k.outer,N.sizing(i??null,r??null,l??null,e??null),b);return g.jsx("div",{ref:T,className:[u.className,v].filter(Boolean).join(" ")||void 0,style:m&&u.style?{...u.style,...m}:m||u.style,...w,children:g.jsx("div",{...$(D("section",{variant:t}),x(k.inner,...X(a?{useThemeDefault:"section"}:{paddingInnerX:d,paddingInnerY:d,paddingOuterX:d,paddingOuterY:d}),!a&&n!==4&&q[n],!a&&n!==4&&P[n],!a&&n!==4&&f[n],!a&&n!==4&&y[n],!a&&j[n],s!=null&&W[s],s!=null&&f[s],s!=null&&y[s],C[t],o?.includes("top")&&c.top,o?.includes("bottom")&&c.bottom,o?.includes("start")&&c.start,o?.includes("end")&&c.end)),children:S})})}h.displayName="XDSSection";h.__docgenInfo={description:`A section container with background variants.
+
+Applies section-specific appearance based on the variant prop
+and sets CSS variables for child layout components.
+
+@compositionHint Use inside XDSCard to create visually distinct regions.
+Sections automatically escape parent container padding for edge-to-edge fills.
+
+@example
+\`\`\`
+<XDSSection variant="muted" width={300} height={250}>
+  <XDSLayout
+    content={<XDSLayoutContent>Content in muted section</XDSLayoutContent>}
+  />
+</XDSSection>
+\`\`\``,methods:[],displayName:"XDSSection",props:{xstyle:{required:!1,tsType:{name:"StyleXStyles"},description:"StyleX styles created via `stylex.create()`. Merged with the component's\nbase styles inside a single `stylex.props()` call for optimal deduplication.\n\n@example\n```\nconst overrides = stylex.create({ root: { marginBottom: 8 } });\n<Component xstyle={overrides.root} />\n```"},ref:{required:!1,tsType:{name:"ReactRef",raw:"React.Ref<HTMLElement>",elements:[{name:"HTMLElement"}]},description:""},variant:{required:!1,tsType:{name:"XDSSectionVariantMap"},description:`Visual variant of the section.
+- 'section': Surface background color
+- 'transparent': Fully transparent background
+- 'muted': Muted background color
+@default 'section'`,defaultValue:{value:"'section'",computed:!1}},width:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:`Width of the section.
+Numbers are treated as pixels, strings are used as-is.`},height:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:`Height of the section.
+Numbers are treated as pixels, strings are used as-is.`},maxWidth:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:`Maximum width of the section.
+Numbers are treated as pixels, strings are used as-is.`},minHeight:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:`Minimum height of the section.
+Numbers are treated as pixels, strings are used as-is.`},children:{required:!1,tsType:{name:"ReactNode"},description:`Content to render inside the section.
+Should typically be XDSLayout child components.`},dividers:{required:!1,tsType:{name:"Array",elements:[{name:"unknown"}],raw:"('top' | 'bottom' | 'start' | 'end')[]"},description:"Which sides should have divider borders.\nUse 'start'/'end' for horizontal (respects RTL).\n@example\n```\ndividers={['top', 'bottom']}\n```"},padding:{required:!1,tsType:{name:"union",raw:"0 | 0.5 | 1 | 1.5 | 2 | 3 | 4 | 5 | 6 | 8 | 10",elements:[{name:"literal",value:"0"},{name:"literal",value:"0.5"},{name:"literal",value:"1"},{name:"literal",value:"1.5"},{name:"literal",value:"2"},{name:"literal",value:"3"},{name:"literal",value:"4"},{name:"literal",value:"5"},{name:"literal",value:"6"},{name:"literal",value:"8"},{name:"literal",value:"10"}]},description:`Internal padding of the section using the spacing scale.
+Accepts numeric spacing steps: 0, 0.5, 1, 1.5, 2, 3, 4, 5, 6, 8, 10.
+@default 4 (16px)`},paddingBlock:{required:!1,tsType:{name:"union",raw:"0 | 0.5 | 1 | 1.5 | 2 | 3 | 4 | 5 | 6 | 8 | 10",elements:[{name:"literal",value:"0"},{name:"literal",value:"0.5"},{name:"literal",value:"1"},{name:"literal",value:"1.5"},{name:"literal",value:"2"},{name:"literal",value:"3"},{name:"literal",value:"4"},{name:"literal",value:"5"},{name:"literal",value:"6"},{name:"literal",value:"8"},{name:"literal",value:"10"}]},description:`Block (vertical) padding override. When set, overrides only the block
+axis padding while preserving inline padding from \`padding\` or the
+container theme default.
+Accepts numeric spacing steps: 0, 0.5, 1, 1.5, 2, 3, 4, 5, 6, 8, 10.`}},composes:["Omit"]};export{h as X};

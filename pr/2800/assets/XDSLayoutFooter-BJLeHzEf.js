@@ -1,0 +1,20 @@
+import{at as g,ad as i,ar as r,ai as h,aZ as k}from"./iframe-yRFQ_7VC.js";import{c as b}from"./XDSLayoutContent-DBrMIkuH.js";import{c as D,a as S,b as L,e as X}from"./padding.stylex-BDg7w1Mn.js";const a={footer:{kmuXW:"xds2lah0s",$$css:!0},inner:{kB7OPa:"xds9f619",ks0D6T:"xdsjl2t3p",kUOVxO:"xdsvueqy4",kZCmMZ:"xds139j0dd",kwRFfy:"xdspc6k2p",kLKAdn:"xdsqty4a",kGO01o:"xdson7vh3","--container-padding-inline-start":"xdsdvaxxn","--container-padding-inline-end":"xdsqpvj4r","--container-padding-block-start":"xdsjmgx01","--container-padding-block-end":"xds1xjq73n",$$css:!0},fullBleed:{kZCmMZ:"xds1c1uobl",kwRFfy:"xdsyri2b",kLKAdn:"xdsexx8yu",kGO01o:"xds18d9i69","--container-padding-inline-start":"xdsrhngw9","--container-padding-inline-end":"xdsjsfl84","--container-padding-block-start":"xds1047aw6","--container-padding-block-end":"xdsax9j7h",$$css:!0},divider:{kEafiO:"xds178xt8z",kPef9Z:"xds13fuv20",kLZC3w:"xds1pc3f07",$$css:!0}},w={sizing:t=>[{kZKoxP:t!=null?"xds16ye13r":t,$$css:!0},{"--x-height":(n=>typeof n=="number"?n+"px":n??void 0)(t)}]};function o({children:t,hasDivider:n,height:l,label:d,padding:e,role:c,xstyle:u,className:p,style:m,ref:f,...y}){const x=g.use(b),s=n??x?.defaultHasDividers??!1,v=e===0;return i.jsx("div",{ref:f,role:c,"aria-label":d,"data-divider":s||void 0,...h(k("layout-footer"),r(a.footer,w.sizing(l??null),s&&a.divider,u),p,m),...y,children:i.jsx("div",{...r(a.inner,v&&a.fullBleed,e!=null&&X[e],e!=null&&L[e],e!=null&&S[e],e!=null&&D[e]),children:t})})}o.displayName="XDSLayoutFooter";o.__docgenInfo={description:`Bottom bar / footer for XDSLayout. Use for action bars, pagination, or status bars.
+Renders in the footer slot with optional divider and padding control.
+
+Already provides its own padding — don't add padding to children.
+Use \`padding={0}\` if your content manages its own padding.
+
+@example
+\`\`\`
+<XDSLayoutContainer variant="card">
+  <XDSLayout
+    content={<XDSLayoutContent>...</XDSLayoutContent>}
+    footer={<XDSLayoutFooter hasDivider>Actions</XDSLayoutFooter>}
+  />
+</XDSLayoutContainer>
+\`\`\``,methods:[],displayName:"XDSLayoutFooter",props:{xstyle:{required:!1,tsType:{name:"StyleXStyles"},description:"StyleX styles created via `stylex.create()`. Merged with the component's\nbase styles inside a single `stylex.props()` call for optimal deduplication.\n\n@example\n```\nconst overrides = stylex.create({ root: { marginBottom: 8 } });\n<Component xstyle={overrides.root} />\n```"},ref:{required:!1,tsType:{name:"ReactRef",raw:"React.Ref<HTMLDivElement>",elements:[{name:"HTMLDivElement"}]},description:""},children:{required:!1,tsType:{name:"ReactNode"},description:"Content to render inside the footer."},hasDivider:{required:!1,tsType:{name:"boolean"},description:"Adds a themed border at the top edge.\nWhen false, spacing collapse is applied automatically for seamless visual flow.\nWhen not set, falls back to the parent XDSLayout's `defaultHasDividers`, then `false`.\n@default false"},height:{required:!1,tsType:{name:"union",raw:"number | string",elements:[{name:"number"},{name:"string"}]},description:`Height of the footer.
+Numbers are treated as pixels, strings are used as-is.`},padding:{required:!1,tsType:{name:"union",raw:"0 | 0.5 | 1 | 1.5 | 2 | 3 | 4 | 5 | 6 | 8 | 10",elements:[{name:"literal",value:"0"},{name:"literal",value:"0.5"},{name:"literal",value:"1"},{name:"literal",value:"1.5"},{name:"literal",value:"2"},{name:"literal",value:"3"},{name:"literal",value:"4"},{name:"literal",value:"5"},{name:"literal",value:"6"},{name:"literal",value:"8"},{name:"literal",value:"10"}]},description:`Internal padding of the footer using the spacing scale.
+Accepts numeric spacing steps: 0, 0.5, 1, 1.5, 2, 3, 4, 5, 6, 8, 10.
+Overrides the default padding from the layout container.`},label:{required:!1,tsType:{name:"string"},description:`Accessible label for the landmark.
+Required when role is set and multiple landmarks of the same type exist.`},role:{required:!1,tsType:{name:"AriaRole"},description:`ARIA landmark role for accessibility.
+Use 'contentinfo' only for site-wide footers (not in nested layouts).`}},composes:["Omit"]};export{o as X};

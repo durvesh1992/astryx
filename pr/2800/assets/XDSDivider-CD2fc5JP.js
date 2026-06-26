@@ -1,0 +1,17 @@
+import{ad as t,ar as n,ai as v,aZ as y}from"./iframe-yRFQ_7VC.js";const l={horizontal:{k1xSpc:"xds78zum5",kGNEyG:"xds6s0dn4",kzqmXN:"xdsh8yej3",$$css:!0},vertical:{k1xSpc:"xds3nfvp2",kXwgrk:"xdsdt5ytf",kGNEyG:"xds6s0dn4",kZKoxP:"xds5yr21d",$$css:!0}},e={horizontalLine:{kZKoxP:"xdssyqizj",kzQI83:"xds1iyjqo2",kmuXW:"xdss83m0k",$$css:!0},verticalLine:{kzqmXN:"xdsjk4fl7",kzQI83:"xds1iyjqo2",kmuXW:"xdss83m0k",$$css:!0},subtle:{kWkggS:"xds1m4xfpy",$$css:!0},strong:{kWkggS:"xds7njt3n",$$css:!0}},o={horizontal:{keTefX:"xdsojxgvx",k71WvV:"xds1fcf3bl",kzqmXN:"xdsx6qvi6",$$css:!0},vertical:{keoZOQ:"xds1sa9bsh",k1K539:"xds6h7pi7",kZKoxP:"xds12qplqi",$$css:!0}};function d({orientation:i="horizontal",label:a,variant:r="subtle",isFullBleed:c=!1,xstyle:p,className:x,style:m,ref:u,...f}){const s=i==="horizontal";return t.jsxs("div",{ref:u,role:"separator","aria-orientation":i,...v(y("divider",{variant:r,orientation:i}),n(s?l.horizontal:l.vertical,c&&(s?o.horizontal:o.vertical),p),x,m),...f,children:[t.jsx("div",{...n(s?e.horizontalLine:e.verticalLine,e[r])}),a&&t.jsx("div",{...{0:{className:"xds2lah0s xdsrrkdod xds141an7d xds1ltkj2j xdsv1l7n4"},1:{className:"xds2lah0s xds141an7d xds1ltkj2j xdsv1l7n4 xdsnjsko4 xds8o8v82"}}[!s<<0],children:a}),a&&t.jsx("div",{...n(s?e.horizontalLine:e.verticalLine,e[r])})]})}d.displayName="XDSDivider";d.__docgenInfo={description:`Divider component for visual separation of content.
+
+Provides horizontal and vertical dividers with optional labels.
+Uses XDS design tokens for colors and spacing.
+
+@example
+\`\`\`
+<XDSDivider label="or" />
+\`\`\``,methods:[],displayName:"XDSDivider",props:{xstyle:{required:!1,tsType:{name:"StyleXStyles"},description:"StyleX styles created via `stylex.create()`. Merged with the component's\nbase styles inside a single `stylex.props()` call for optimal deduplication.\n\n@example\n```\nconst overrides = stylex.create({ root: { marginBottom: 8 } });\n<Component xstyle={overrides.root} />\n```"},ref:{required:!1,tsType:{name:"ReactRef",raw:"React.Ref<HTMLDivElement>",elements:[{name:"HTMLDivElement"}]},description:"Ref forwarded to the root element"},orientation:{required:!1,tsType:{name:"union",raw:"'horizontal' | 'vertical'",elements:[{name:"literal",value:"'horizontal'"},{name:"literal",value:"'vertical'"}]},description:`Orientation of the divider.
+@default 'horizontal'`,defaultValue:{value:"'horizontal'",computed:!1}},label:{required:!1,tsType:{name:"ReactNode"},description:`Optional label to display centered on the divider.
+Rendered with small, secondary text styling.`},variant:{required:!1,tsType:{name:"XDSDividerVariantMap"},description:`Visual weight of the divider line.
+- 'subtle': Uses --color-border (default)
+- 'strong': Uses --color-border-emphasized
+@default 'subtle'`,defaultValue:{value:"'subtle'",computed:!1}},isFullBleed:{required:!1,tsType:{name:"boolean"},description:`Makes the divider escape its parent's container padding.
+Uses negative margins to extend to the container edges.
+@default false`,defaultValue:{value:"false",computed:!1}},className:{required:!1,tsType:{name:"string"},description:"CSS class name(s) appended to the root element.\nIf you're using StyleX, prefer `xstyle` for optimal style deduplication."},style:{required:!1,tsType:{name:"ReactCSSProperties",raw:"React.CSSProperties"},description:`Inline styles to apply to the root element. Spread after StyleX
+inline styles, so these values take priority.`}},composes:["Omit"]};export{d as X};
